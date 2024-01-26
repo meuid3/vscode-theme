@@ -1,0 +1,28 @@
+{
+  "name": "headfox-theme",
+  "version": "1.0.0",
+  "description": "Tema Dark",
+  "displayName": "HeadFox Dark",
+  "icon": "assets/fox.png",
+  "keywords": ["headfox, headfox icon", "headfox code"],
+  "publisher": "meuid3",
+  "engines": {
+    "vscode": "^1.22.0"
+  },
+  "categories": ["Themes"],
+  "contributes": {
+    "themes": [{
+      "label": "Headfox Theme",
+      "uiTheme": "vs-dark",
+      "path": "./themes/headfox-theme.json"
+    }]
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "vsce": "^2.15.0"
+  },
+  "scripts": {
+    "package": "vsce package --no-yarn",
+    "publish": "vsce publish --no-yarn"
+  }
+}
